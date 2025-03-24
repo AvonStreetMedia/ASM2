@@ -1,0 +1,216 @@
+/* TOC Style 1 - Default Clean Style */
+.gp-toc.toc-1 {
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: #f8fafc;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.gp-toc.toc-1 .gp-toc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.gp-toc.toc-1 .gp-toc-title {
+    margin: 0;
+    color: #2d3748;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.gp-toc.toc-1 .gp-toc-toggle {
+    cursor: pointer;
+    color: #718096;
+    font-size: 14px;
+}
+
+.gp-toc.toc-1 .gp-toc-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.gp-toc.toc-1 .gp-toc-sublist {
+    margin: 5px 0 0 0;
+    padding-left: 20px;
+}
+
+.gp-toc.toc-1 .gp-toc-item {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.gp-toc.toc-1 a {
+    color: #4a5568;
+    text-decoration: none;
+}
+
+.gp-toc.toc-1 a:hover {
+    color: #3182ce;
+    text-decoration: underline;
+}
+
+/* TOC Style 2 - Boxed Style */
+.gp-toc.toc-2 {
+    border: none;
+    border-radius: 8px;
+    background-color: #edf2f7;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.gp-toc.toc-2 .gp-toc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #4299e1;
+    margin: -20px -20px 15px -20px;
+    padding: 12px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.gp-toc.toc-2 .gp-toc-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.gp-toc.toc-2 .gp-toc-toggle {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.gp-toc.toc-2 .gp-toc-list {
+    margin: 0;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.gp-toc.toc-2 .gp-toc-sublist {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.gp-toc.toc-2 .gp-toc-item {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.gp-toc.toc-2 .gp-toc-item:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #4299e1;
+}
+
+.gp-toc.toc-2 a {
+    color: #2c5282;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.gp-toc.toc-2 a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+/* TOC Style 3 - Minimal Style */
+.gp-toc.toc-3 {
+    border-left: 4px solid #805ad5;
+    background-color: transparent;
+    padding: 0 0 0 20px;
+    margin: 25px 0;
+    font-size: 15px;
+}
+
+.gp-toc.toc-3 .gp-toc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.gp-toc.toc-3 .gp-toc-title {
+    margin: 0;
+    color: #4a5568;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.gp-toc.toc-3 .gp-toc-toggle {
+    cursor: pointer;
+    color: #805ad5;
+    font-size: 14px;
+}
+
+.gp-toc.toc-3 .gp-toc-list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.gp-toc.toc-3 .gp-toc-sublist {
+    margin: 5px 0 0 0;
+    padding-left: 15px;
+    list-style-type: none;
+    border-left: 1px dotted #cbd5e0;
+}
+
+.gp-toc.toc-3 .gp-toc-item {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.gp-toc.toc-3 a {
+    color: #4a5568;
+    text-decoration: none;
+    padding: 3px 0;
+    display: inline-block;
+    border-bottom: 1px dotted transparent;
+    transition: all 0.2s ease;
+}
+
+.gp-toc.toc-3 a:hover {
+    color: #805ad5;
+    border-bottom: 1px dotted #805ad5;
+}
+
+/* Toggle functionality - works for all styles */
+.gp-toc.toc-toggle .gp-toc-toggle-hide {
+    display: none;
+}
+
+.gp-toc.toc-toggle.toc-collapsed .gp-toc-toggle-show {
+    display: none;
+}
+
+.gp-toc.toc-toggle.toc-collapsed .gp-toc-toggle-hide {
+    display: inline;
+}
+
+.gp-toc.toc-toggle.toc-collapsed .gp-toc-content {
+    display: none;
+}
+
+/* Highlight current section */
+.gp-toc-list a.toc-active {
+    font-weight: bold;
+}
+
+.toc-highlight {
+    background-color: rgba(255, 255, 0, 0.2);
+    transition: background-color 1s ease;
+}
